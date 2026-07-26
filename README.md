@@ -9,3 +9,5 @@ product lab turning sharp ideas into focused, useful software.
 pnpm install
 pnpm dev
 ```
+
+The static site is built and deployed to GitHub Pages from `main`.
