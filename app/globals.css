@@ -152,7 +152,6 @@ button {
   padding: 12px 17px;
   display: inline-flex;
   align-items: center;
-  gap: 18px;
   border: 1px solid var(--ink);
   border-radius: 11px;
   background: var(--ink);
@@ -255,8 +254,8 @@ button {
   margin: 0;
   font-size: clamp(64px, 8.6vw, 138px);
   font-weight: 520;
-  line-height: 0.86;
-  letter-spacing: -0.075em;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
 }
 
 .hero h1 span {
@@ -281,56 +280,12 @@ button {
   gap: 12px;
 }
 
-.arrow-icon {
-  position: relative;
-  width: 13px;
-  height: 13px;
-  flex: 0 0 13px;
-  display: inline-block;
-}
-
-.arrow-icon::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 1px;
-  top: 6px;
-  left: 2px;
-  background: currentColor;
-}
-
-.arrow-icon::after {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  top: 4px;
-  right: 2px;
-  border-top: 1px solid currentColor;
-  border-right: 1px solid currentColor;
-  transform: rotate(45deg);
-  transform-origin: center;
-}
-
-.arrow-diagonal {
-  transform: rotate(-45deg);
-}
-
-.arrow-down {
-  transform: rotate(90deg);
-}
-
-.arrow-up {
-  transform: rotate(-90deg);
-}
-
 .button {
   min-height: 52px;
   padding: 0 19px;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
   border-radius: 13px;
   font-size: 13px;
   font-weight: 570;
@@ -598,16 +553,6 @@ button {
   justify-self: end;
 }
 
-.scroll-cue i {
-  margin-left: 8px;
-  color: var(--ink);
-  animation: bob 1.8s ease-in-out infinite;
-}
-
-@keyframes bob {
-  50% { transform: translateY(4px); }
-}
-
 .products {
   padding-top: 145px;
   padding-bottom: 150px;
@@ -641,7 +586,7 @@ button {
   font-size: clamp(44px, 5.6vw, 80px);
   font-weight: 520;
   line-height: 0.96;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.024em;
 }
 
 .section-heading > div > p {
@@ -708,7 +653,7 @@ button {
   margin: 0;
   font-size: clamp(52px, 5.7vw, 84px);
   font-weight: 540;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.02em;
 }
 
 .product-description {
@@ -723,7 +668,6 @@ button {
   width: fit-content;
   padding-bottom: 5px;
   display: flex;
-  gap: 48px;
   border-bottom: 1px solid var(--ink);
   font-size: 13px;
   font-weight: 560;
@@ -1014,15 +958,11 @@ button {
   font-size: 22px;
 }
 
-.principle-icon .arrow-icon {
-  color: var(--electric);
-}
-
 .principles h3 {
   margin: auto 0 12px;
   font-size: 19px;
   font-weight: 520;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .principles p {
@@ -1058,7 +998,7 @@ button {
   font-size: clamp(35px, 4vw, 58px);
   font-weight: 500;
   line-height: 1.08;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.02em;
 }
 
 .about-aside {
@@ -1140,7 +1080,7 @@ button {
   font-size: clamp(50px, 6.5vw, 96px);
   font-weight: 500;
   line-height: 0.96;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.022em;
 }
 
 .contact-card > p:not(.eyebrow) {
@@ -1185,12 +1125,6 @@ button {
   justify-content: flex-end;
   gap: 28px;
   font-size: 12px;
-}
-
-.back-to-top {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
 }
 
 .footer-links a:hover {
@@ -1295,7 +1229,7 @@ button {
 
   .nav-cta {
     margin-top: auto;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .hero {
@@ -1309,7 +1243,8 @@ button {
 
   .hero h1 {
     font-size: clamp(58px, 18vw, 100px);
-    line-height: 0.9;
+    line-height: 0.94;
+    letter-spacing: -0.015em;
   }
 
   .hero-intro {
@@ -1379,6 +1314,7 @@ button {
 
   .section-heading h2 {
     font-size: 52px;
+    letter-spacing: -0.018em;
   }
 
   .product-card {
@@ -1421,6 +1357,7 @@ button {
 
   .approach-heading h2 {
     font-size: 52px;
+    letter-spacing: -0.018em;
   }
 
   .principles {
@@ -1463,6 +1400,7 @@ button {
 
   .contact-card h2 {
     font-size: 51px;
+    letter-spacing: -0.018em;
   }
 
   .site-footer {
