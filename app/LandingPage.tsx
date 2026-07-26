@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { RequestForm } from "./RequestForm";
 
 const navItems = [
   { label: "Products", href: "#products" },
@@ -48,8 +49,8 @@ export function LandingPage() {
               {item.label}
             </a>
           ))}
-          <a className="nav-cta" href="mailto:hello@aibuildlabs.dev" onClick={closeMenu}>
-            Start a conversation
+          <a className="nav-cta" href="#contact" onClick={closeMenu}>
+            Send a request
           </a>
         </nav>
 
@@ -172,8 +173,8 @@ export function LandingPage() {
                 safer code changes without losing the plot.
               </p>
             </div>
-            <a className="product-link" href="mailto:hello@aibuildlabs.dev?subject=PatchPilot early access">
-              Follow the build
+            <a className="product-link" href="/patchpilot/">
+              Explore PatchPilot
             </a>
           </div>
 
@@ -273,15 +274,13 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="contact section-shell">
+      <section className="contact section-shell" id="contact">
         <div className="contact-card">
           <div className="contact-glow" aria-hidden="true" />
           <p className="eyebrow"><span className="status-dot" /> The lab is open</p>
           <h2>Have a hard problem<br />worth building for?</h2>
           <p>We like ambitious ideas, thoughtful people, and conversations that start with “what if?”</p>
-          <a className="button button-light" href="mailto:hello@aibuildlabs.dev">
-            hello@aibuildlabs.dev
-          </a>
+          <RequestForm context="AI Build Labs product request" compact />
         </div>
       </section>
 
@@ -293,7 +292,7 @@ export function LandingPage() {
         <p>Ideas in. Products out.</p>
         <div className="footer-links">
           <a href="#products">Products</a>
-          <a href="mailto:hello@aibuildlabs.dev">Email</a>
+          <a href="#contact">Send a request</a>
           <a href="#top">Back to top</a>
         </div>
         <span className="copyright">© 2026 AI Build Labs</span>
