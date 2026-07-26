@@ -124,7 +124,7 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 26px;
   font-size: 13px;
   color: #3e3e3b;
 }
@@ -152,7 +152,7 @@ button {
   padding: 12px 17px;
   display: inline-flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   border: 1px solid var(--ink);
   border-radius: 11px;
   background: var(--ink);
@@ -281,6 +281,49 @@ button {
   gap: 12px;
 }
 
+.arrow-icon {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  display: inline-block;
+}
+
+.arrow-icon::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  top: 6px;
+  left: 2px;
+  background: currentColor;
+}
+
+.arrow-icon::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 4px;
+  right: 2px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.arrow-diagonal {
+  transform: rotate(-45deg);
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+.arrow-up {
+  transform: rotate(-90deg);
+}
+
 .button {
   min-height: 52px;
   padding: 0 19px;
@@ -319,7 +362,7 @@ button {
 .hero-lab {
   position: relative;
   width: min(720px, 58vw);
-  margin: -44px 0 0 auto;
+  margin: 56px 0 0 auto;
   perspective: 1000px;
 }
 
@@ -557,9 +600,7 @@ button {
 
 .scroll-cue i {
   margin-left: 8px;
-  display: inline-block;
   color: var(--ink);
-  font-style: normal;
   animation: bob 1.8s ease-in-out infinite;
 }
 
@@ -691,9 +732,12 @@ button {
 .product-visual {
   position: relative;
   min-height: 570px;
-  padding: 70px 7%;
-  display: grid;
-  place-items: center;
+  padding: 48px 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
   overflow: hidden;
   background:
     radial-gradient(circle at 70% 25%, rgba(157, 135, 255, 0.25), transparent 35%),
@@ -720,7 +764,6 @@ button {
   border-radius: 15px;
   background: rgba(18, 18, 21, 0.88);
   box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
-  transform: rotate(-2deg);
   backdrop-filter: blur(14px);
 }
 
@@ -794,6 +837,17 @@ button {
   color: #85dff0;
 }
 
+.code-status-dot {
+  width: 5px;
+  height: 5px;
+  margin-right: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 9px currentColor;
+  vertical-align: 1px;
+}
+
 .code-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.09);
 }
@@ -803,10 +857,8 @@ button {
 }
 
 .patch-badge {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  right: 3.5%;
-  bottom: 68px;
   min-width: 225px;
   padding: 13px;
   display: grid;
@@ -818,7 +870,7 @@ button {
   background: rgba(244, 242, 236, 0.94);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
   color: var(--ink);
-  transform: rotate(2deg);
+  align-self: flex-end;
 }
 
 .patch-badge > span {
@@ -960,6 +1012,10 @@ button {
   border-radius: 50%;
   color: var(--electric);
   font-size: 22px;
+}
+
+.principle-icon .arrow-icon {
+  color: var(--electric);
 }
 
 .principles h3 {
@@ -1131,6 +1187,12 @@ button {
   font-size: 12px;
 }
 
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
 .footer-links a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -1149,7 +1211,7 @@ button {
 @media (max-width: 1050px) {
   .hero-lab {
     width: min(720px, 76vw);
-    margin-top: 50px;
+    margin-top: 56px;
   }
 
   .hero-intro,
@@ -1336,8 +1398,8 @@ button {
   }
 
   .product-visual {
-    min-height: 480px;
-    padding: 48px 18px;
+    min-height: 520px;
+    padding: 46px 18px;
   }
 
   .code-window {
@@ -1345,8 +1407,7 @@ button {
   }
 
   .patch-badge {
-    right: 12px;
-    bottom: 35px;
+    align-self: stretch;
   }
 
   .product-slots {

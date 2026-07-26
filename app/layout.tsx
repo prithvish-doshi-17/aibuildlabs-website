@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://aibuildlabs.dev"),
   title: {
-    default: "AI Build Labs — Ideas built into useful products",
-    template: "%s — AI Build Labs",
+    default: "AI Build Labs | Ideas built into useful products",
+    template: "%s | AI Build Labs",
   },
   description:
     "An independent AI product lab turning sharp ideas into focused, useful software.",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://aibuildlabs.dev",
     siteName: "AI Build Labs",
-    title: "AI Build Labs — Ideas built into useful products",
+    title: "AI Build Labs | Ideas built into useful products",
     description:
       "An independent AI product lab turning sharp ideas into focused, useful software.",
     images: [
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1736,
         height: 907,
-        alt: "AI Build Labs — Ideas built into useful products",
+        alt: "AI Build Labs, ideas built into useful products",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Build Labs — Ideas built into useful products",
+    title: "AI Build Labs | Ideas built into useful products",
     description:
       "An independent AI product lab turning sharp ideas into focused, useful software.",
     images: ["/og.png"],

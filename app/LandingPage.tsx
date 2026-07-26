@@ -49,7 +49,7 @@ export function LandingPage() {
             </a>
           ))}
           <a className="nav-cta" href="mailto:hello@aibuildlabs.dev" onClick={closeMenu}>
-            Start a conversation <span aria-hidden="true">↗</span>
+            Start a conversation <span className="arrow-icon arrow-diagonal" aria-hidden="true" />
           </a>
         </nav>
 
@@ -82,10 +82,10 @@ export function LandingPage() {
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#products">
-              Explore our products <span aria-hidden="true">↓</span>
+              Explore our products <span className="arrow-icon arrow-down" aria-hidden="true" />
             </a>
             <a className="button button-quiet" href="#approach">
-              How we build <span aria-hidden="true">↗</span>
+              How we build <span className="arrow-icon arrow-diagonal" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -141,7 +141,9 @@ export function LandingPage() {
 
         <div className="hero-footnote">
           <span>EST. 2026</span>
-          <span className="scroll-cue">Scroll to enter the lab <i>↓</i></span>
+          <span className="scroll-cue">
+            Scroll to enter the lab <i className="arrow-icon arrow-down" aria-hidden="true" />
+          </span>
           <span>BUILDING ON THE OPEN WEB</span>
         </div>
       </section>
@@ -169,11 +171,11 @@ export function LandingPage() {
               <h3>PatchPilot</h3>
               <p className="product-description">
                 A focused AI teammate for understanding, planning, and shipping
-                safer code changes—without losing the plot.
+                safer code changes without losing the plot.
               </p>
             </div>
             <a className="product-link" href="mailto:hello@aibuildlabs.dev?subject=PatchPilot early access">
-              Follow the build <span aria-hidden="true">↗</span>
+              Follow the build <span className="arrow-icon arrow-diagonal" aria-hidden="true" />
             </a>
           </div>
 
@@ -193,7 +195,7 @@ export function LandingPage() {
                   <p className="code-muted">────────────────────────</p>
                   <p className="code-green">+ rotate token after successful refresh</p>
                   <p className="code-green">+ invalidate the previous session key</p>
-                  <p className="code-blue">→ verification plan ready</p>
+                  <p className="code-blue"><i className="code-status-dot" />verification plan ready</p>
                 </div>
               </div>
               <div className="code-footer">
@@ -247,7 +249,9 @@ export function LandingPage() {
           </article>
           <article>
             <span className="principle-number">03</span>
-            <div className="principle-icon">↗</div>
+            <div className="principle-icon">
+              <span className="arrow-icon arrow-diagonal" aria-hidden="true" />
+            </div>
             <h3>Ship with taste</h3>
             <p>Make it focused, dependable, and a pleasure to use. Details are part of the product.</p>
           </article>
@@ -262,7 +266,7 @@ export function LandingPage() {
               Part studio. Part workshop. Part company.
             </p>
             <h2>
-              AI Build Labs is a home for useful, opinionated products—built
+              AI Build Labs is a home for useful, opinionated products, built
               with curiosity, technical depth, and an allergy to bloat.
             </h2>
           </div>
@@ -280,7 +284,7 @@ export function LandingPage() {
           <h2>Have a hard problem<br />worth building for?</h2>
           <p>We like ambitious ideas, thoughtful people, and conversations that start with “what if?”</p>
           <a className="button button-light" href="mailto:hello@aibuildlabs.dev">
-            hello@aibuildlabs.dev <span aria-hidden="true">↗</span>
+            hello@aibuildlabs.dev <span className="arrow-icon arrow-diagonal" aria-hidden="true" />
           </a>
         </div>
       </section>
@@ -294,7 +298,9 @@ export function LandingPage() {
         <div className="footer-links">
           <a href="#products">Products</a>
           <a href="mailto:hello@aibuildlabs.dev">Email</a>
-          <a href="#top">Back to top ↑</a>
+          <a className="back-to-top" href="#top">
+            Back to top <span className="arrow-icon arrow-up" aria-hidden="true" />
+          </a>
         </div>
         <span className="copyright">© 2026 AI Build Labs</span>
       </footer>
