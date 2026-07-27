@@ -82,41 +82,12 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 11px;
-  font-size: 14px;
-  font-weight: 650;
-  letter-spacing: -0.02em;
 }
 
-.brand-mark {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  transform: rotate(-8deg);
-}
-
-.brand-mark span {
-  position: absolute;
+.brand-logo {
+  width: 151px;
+  height: auto;
   display: block;
-  border-radius: 2px;
-  background: var(--ink);
-}
-
-.brand-mark span:nth-child(1) {
-  inset: 2px 11px 11px 2px;
-}
-
-.brand-mark span:nth-child(2) {
-  inset: 11px 2px 2px 11px;
-}
-
-.brand-mark span:nth-child(3) {
-  width: 7px;
-  height: 7px;
-  top: 2px;
-  right: 2px;
-  background: var(--violet);
 }
 
 .nav-links {
@@ -258,8 +229,7 @@ button {
 
 .hero h1 span {
   display: block;
-  color: transparent;
-  -webkit-text-stroke: 1.6px var(--ink);
+  color: #77756f;
 }
 
 .hero-intro {
@@ -1290,8 +1260,7 @@ button {
 
 .pp-hero-copy h1 span {
   display: block;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--ink);
+  color: #77756f;
 }
 
 .pp-hero-copy > p:not(.eyebrow) {
@@ -1843,16 +1812,23 @@ button {
   }
 
   .nav-links {
-    position: fixed;
+    position: absolute;
     z-index: 51;
-    inset: -1px;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    min-height: calc(100svh - 20px);
+    max-height: calc(100svh - 20px);
     padding: 95px 26px 28px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+    overflow-y: auto;
+    border: 1px solid var(--line);
     border-radius: 18px;
-    background: rgba(243, 241, 235, 0.98);
+    background: var(--paper);
+    box-shadow: 0 24px 70px rgba(16, 16, 18, 0.16);
     opacity: 0;
     transform: translateY(-12px);
     pointer-events: none;

@@ -35,12 +35,11 @@ export function LandingPage() {
     <main>
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <a className="brand" href="#top" aria-label="AI Build Labs home">
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span>AI Build Labs</span>
+          <img
+            className="brand-logo"
+            src="/brand/ai-build-labs-horizontal.svg"
+            alt="AI Build Labs"
+          />
         </a>
 
         <nav className={`nav-links ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
@@ -286,8 +285,11 @@ export function LandingPage() {
 
       <footer className="site-footer section-shell">
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
-          <span>AI Build Labs</span>
+          <img
+            className="brand-logo"
+            src="/brand/ai-build-labs-horizontal.svg"
+            alt="AI Build Labs"
+          />
         </a>
         <p>Ideas in. Products out.</p>
         <div className="footer-links">

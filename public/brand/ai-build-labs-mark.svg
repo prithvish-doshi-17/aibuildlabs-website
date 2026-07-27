@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">AI Build Labs catalyst mark</title>
+  <desc id="desc">A cobalt catalyst spark centered inside a dark hexagonal laboratory frame.</desc>
+  <path d="M128 14 228 72v112l-100 58-100-58V72Z" fill="none" stroke="#101820" stroke-width="18" stroke-linejoin="round"/>
+  <path fill="#155EEF" fill-rule="evenodd" d="M128 58c5 38 14 58 56 70-42 12-51 32-56 70-5-38-14-58-56-70 42-12 51-32 56-70Zm0 57-13 13 13 13 13-13-13-13Z"/>
+</svg>

@@ -62,12 +62,11 @@ export function PatchPilotPage() {
     <main className="pp-page">
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <a className="brand" href="/" aria-label="AI Build Labs home">
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span>AI Build Labs</span>
+          <img
+            className="brand-logo"
+            src="/brand/ai-build-labs-horizontal.svg"
+            alt="AI Build Labs"
+          />
         </a>
 
         <nav
@@ -344,12 +343,11 @@ export function PatchPilotPage() {
 
       <footer className="site-footer section-shell">
         <a className="brand footer-brand" href="/">
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span>AI Build Labs</span>
+          <img
+            className="brand-logo"
+            src="/brand/ai-build-labs-horizontal.svg"
+            alt="AI Build Labs"
+          />
         </a>
         <p>PatchPilot / API change intelligence</p>
         <div className="footer-links">

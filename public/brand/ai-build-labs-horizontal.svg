@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 256" role="img" aria-labelledby="title desc">
+  <title id="title">AI Build Labs</title>
+  <desc id="desc">AI Build Labs wordmark with a cobalt catalyst spark inside a dark hexagonal frame.</desc>
+  <defs>
+    <symbol id="a" viewBox="0 0 40 56"><path fill="currentColor" fill-rule="evenodd" d="M0 56 15 0h10l15 56H29l-3-13H14l-3 13H0Zm16-22h8l-4-18-4 18Z"/></symbol>
+    <symbol id="i" viewBox="0 0 40 56"><path fill="currentColor" d="M4 0h32v9H25v38h11v9H4v-9h11V9H4Z"/></symbol>
+    <symbol id="b" viewBox="0 0 42 56"><path fill="currentColor" fill-rule="evenodd" d="M3 0h20c11 0 17 5 17 14 0 7-3 11-9 14 7 2 11 6 11 13 0 10-7 15-19 15H3V0Zm11 9v14h8c5 0 7-2 7-7s-2-7-7-7h-8Zm0 23v15h9c5 0 8-2 8-7s-3-8-8-8h-9Z"/></symbol>
+    <symbol id="u" viewBox="0 0 42 56"><path fill="currentColor" d="M3 0h11v37c0 7 2 10 7 10s7-3 7-10V0h11v38c0 13-6 19-18 19S3 51 3 38V0Z"/></symbol>
+    <symbol id="l" viewBox="0 0 40 56"><path fill="currentColor" d="M5 0h11v46h24v10H5Z"/></symbol>
+    <symbol id="d" viewBox="0 0 43 56"><path fill="currentColor" fill-rule="evenodd" d="M3 0h18c14 0 21 9 21 28s-7 28-21 28H3V0Zm11 10v36h7c7 0 10-5 10-18s-3-18-10-18h-7Z"/></symbol>
+    <symbol id="s" viewBox="0 0 41 56"><path fill="currentColor" d="M37 4v11c-5-4-10-6-16-6-5 0-8 2-8 6 0 3 2 5 10 8 11 4 16 9 16 17 0 11-8 17-21 17-7 0-13-2-17-5V40c5 5 11 7 17 7s9-2 9-6c0-3-3-5-11-8C6 29 1 24 1 16 1 6 9 0 21 0c6 0 12 1 16 4Z"/></symbol>
+  </defs>
+  <g transform="translate(12)">
+    <path d="M128 14 228 72v112l-100 58-100-58V72Z" fill="none" stroke="#101820" stroke-width="18" stroke-linejoin="round"/>
+    <path fill="#155EEF" fill-rule="evenodd" d="M128 58c5 38 14 58 56 70-42 12-51 32-56 70-5-38-14-58-56-70 42-12 51-32 56-70Zm0 57-13 13 13 13 13-13-13-13Z"/>
+  </g>
+  <g transform="translate(292 100)">
+    <g color="#101820">
+      <use href="#a" width="40" height="56"/>
+      <use href="#i" x="48" width="40" height="56"/>
+    </g>
+    <g color="#155EEF">
+      <use href="#b" x="112" width="42" height="56"/>
+      <use href="#u" x="162" width="42" height="56"/>
+      <use href="#i" x="212" width="40" height="56"/>
+      <use href="#l" x="260" width="40" height="56"/>
+      <use href="#d" x="308" width="43" height="56"/>
+    </g>
+    <g color="#101820">
+      <use href="#l" x="374" width="40" height="56"/>
+      <use href="#a" x="422" width="40" height="56"/>
+      <use href="#b" x="470" width="42" height="56"/>
+      <use href="#s" x="520" width="41" height="56"/>
+    </g>
+  </g>
+</svg>

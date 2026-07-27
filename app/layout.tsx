@@ -46,8 +46,8 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/brand/ai-build-labs-mark.svg",
+    shortcut: "/brand/ai-build-labs-mark.svg",
   },
 };
 
